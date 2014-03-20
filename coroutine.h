@@ -150,7 +150,7 @@ private:
 		self.yield();
 	}
 private:
-	const coroutine& self;
+	const coroutine<void>& self;
 	void (*m_roroutineFunc)(coroutine<void>& self);
 	char* m_stack;
 	ucontext_t m_callee;
